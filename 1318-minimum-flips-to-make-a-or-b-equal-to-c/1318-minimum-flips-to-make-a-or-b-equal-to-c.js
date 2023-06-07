@@ -35,8 +35,7 @@ var minFlips = function(a, b, c) {
         
     }
     
-    let max = Math.max(space1.length, space2.length);
-    let size = Math.max(max, space3.length);
+    let size = Math.max(space1.length, space2.length, space3.length);
     
     for(let i= 0; i < size; i++){
         
