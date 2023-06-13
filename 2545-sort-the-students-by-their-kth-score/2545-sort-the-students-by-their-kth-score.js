@@ -4,22 +4,19 @@
  * @return {number[][]}
  */
 var sortTheStudents = function(score, k) {
-    let extra = new Map();
-    
+    let map = [];
+    let output = [];
     for(let i = 0; i < score.length; i++){
-        extra.set(score[i][k], i);
+        map.push([score[i][k], i]);
     }
     
-    let sorted = ([...extra.entries()].sort(([keyA],[keyB]) => keyB - keyA));
-    let sortedMap = new Map(sorted);
+    map.sort((a,b) => b[0] - a[0]);
     
-    let ans = [];
-    
-    for(const value of sortedMap.values()){
-        ans.push(score[value]);
+    for(let i = 0; i < map.length; i++){
+        output.push(score[map[i][1]]);
     }
     
-    return ans;
+    return output;
    
 
 //    for(let i = 0; i < score.length; i++){
