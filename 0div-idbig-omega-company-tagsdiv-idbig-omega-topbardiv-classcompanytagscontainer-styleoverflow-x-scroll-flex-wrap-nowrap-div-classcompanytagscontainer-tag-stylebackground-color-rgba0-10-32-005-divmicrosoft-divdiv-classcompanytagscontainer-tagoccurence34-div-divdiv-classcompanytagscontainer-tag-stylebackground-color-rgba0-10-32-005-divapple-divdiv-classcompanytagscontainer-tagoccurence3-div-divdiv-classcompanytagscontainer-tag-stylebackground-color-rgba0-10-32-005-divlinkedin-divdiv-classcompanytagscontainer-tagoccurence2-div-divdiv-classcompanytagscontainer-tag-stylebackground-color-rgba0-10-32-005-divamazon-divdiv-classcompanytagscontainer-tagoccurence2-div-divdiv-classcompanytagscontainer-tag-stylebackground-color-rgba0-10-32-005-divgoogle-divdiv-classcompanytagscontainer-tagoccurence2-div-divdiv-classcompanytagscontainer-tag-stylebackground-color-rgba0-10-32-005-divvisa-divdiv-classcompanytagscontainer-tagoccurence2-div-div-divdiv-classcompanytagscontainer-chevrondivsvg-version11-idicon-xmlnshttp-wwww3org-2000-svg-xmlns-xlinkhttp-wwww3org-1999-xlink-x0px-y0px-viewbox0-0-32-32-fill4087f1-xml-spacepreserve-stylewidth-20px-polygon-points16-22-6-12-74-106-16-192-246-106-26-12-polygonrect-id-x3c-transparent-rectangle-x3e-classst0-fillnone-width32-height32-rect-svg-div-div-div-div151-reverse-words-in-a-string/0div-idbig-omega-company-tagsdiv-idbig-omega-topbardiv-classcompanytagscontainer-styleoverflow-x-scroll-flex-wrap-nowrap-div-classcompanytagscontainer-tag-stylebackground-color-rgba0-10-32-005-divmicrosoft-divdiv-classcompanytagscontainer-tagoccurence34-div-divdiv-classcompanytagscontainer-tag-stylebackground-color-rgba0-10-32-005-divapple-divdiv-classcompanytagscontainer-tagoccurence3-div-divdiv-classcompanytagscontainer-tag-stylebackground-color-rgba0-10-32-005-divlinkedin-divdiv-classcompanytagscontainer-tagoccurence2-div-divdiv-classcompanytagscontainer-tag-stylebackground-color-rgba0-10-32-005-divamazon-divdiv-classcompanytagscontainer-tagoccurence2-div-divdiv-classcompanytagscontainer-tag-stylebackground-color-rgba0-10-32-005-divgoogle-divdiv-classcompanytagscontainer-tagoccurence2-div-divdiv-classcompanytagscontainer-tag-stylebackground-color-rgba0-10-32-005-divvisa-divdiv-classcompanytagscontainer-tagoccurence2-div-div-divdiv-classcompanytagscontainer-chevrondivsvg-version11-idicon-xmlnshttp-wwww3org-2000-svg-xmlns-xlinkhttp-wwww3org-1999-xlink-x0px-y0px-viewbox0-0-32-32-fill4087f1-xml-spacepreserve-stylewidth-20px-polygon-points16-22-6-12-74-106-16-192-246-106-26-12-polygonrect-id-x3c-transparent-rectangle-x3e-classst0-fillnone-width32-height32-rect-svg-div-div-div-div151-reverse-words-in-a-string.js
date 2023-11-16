@@ -3,26 +3,13 @@
  * @return {string}
  */
 var reverseWords = function(s) {
-    let stack = s.split(" ");
-    let result = [];
-    let str = ""
-    
-    for(let i = stack.length - 1; i >= 0; i--){
-        if(stack[i] == ""){
-            continue;
+    let stack = [];
+    s = s.split(" ");
+    for(let i = s.length - 1; i >= 0; i--){
+        if(s[i] !== ""){
+            stack.push(s[i]);
         }
-        else result.push(stack[i])
     }
-    
-    for(let i = 0; i < result.length; i++){
-        if(i == result.length - 1){
-            str += result[i];
-            break;
-        }
-        
-        str+=result[i];
-        str+=" ";
-    }
-    
-    return str;
+
+    return stack.join(" ");
 };
