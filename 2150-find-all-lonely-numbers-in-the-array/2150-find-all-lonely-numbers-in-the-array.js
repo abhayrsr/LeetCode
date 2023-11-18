@@ -4,18 +4,19 @@
  */
 var findLonely = function(nums) {
     let result = [];
-    nums.sort((a,b) => a-b);
-    let left = 0, right = 1;
+    let map = new Map();
     
-    while(right <= nums.length){
-        if(nums[left] == nums[right] || nums[left] == nums[left-1] || nums[left] == nums[left - 1] + 1 || nums[left] == nums[left+1] - 1){
-            left++;
-            right++;
-            continue;
+    for(let i = 0; i < nums.length; i++){
+        if(map.has(nums[i])){
+            map.set(nums[i], map.get(nums[i]) + 1);
         } else {
-            result.push(nums[left]);
-            left++;
-            right++;
+            map.set(nums[i], 1);
+        }
+    }
+    
+    for(let i = 0; i < nums.length; i++){
+        if(map.get(nums[i]) === 1 && !(map.has(nums[i] + 1) ||  map.has(nums[i] - 1))){
+            result.push(nums[i]);
         }
     }
     
