@@ -21,7 +21,7 @@ var checkArithmeticSubarrays = function(nums, l, r) {
         arr.sort((a,b) => a-b);
         let diff = arr[0] - arr[1];
 
-        for(let j = 1; j < arr.length; j++){
+        for(let j = 0; j < arr.length; j++){
             if(j+1 < arr.length){
                 if(arr[j] - arr[j+1] !== diff){
                     bool[i]= (false);
