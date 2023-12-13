@@ -13,21 +13,14 @@
  * @return {number}
  */
 var rangeSumBST = function(root, low, high) {
-    let arr = [];
-    let sum = 0;
     
-    function tree(root){
-        if(root == null) return;
-        tree(root.left);
-        arr.push(root.val);
-        tree(root.right);
+    function tree(root, low, high){
+        let sum = 0;
+        if(root == null) return 0;
+        if(root.left) sum += tree(root.left, low, high);
+        if(root.val >= low && root.val <= high) sum += root.val;
+        if(root.right) sum += tree(root.right, low, high);
+        return sum;
     }
-    tree(root);
-    
-    for(let i = 0; i < arr.length; i++){
-        if(arr[i] >= low && arr[i] <= high){
-            sum += arr[i];
-        }
-    }
-    return sum;
+    return tree(root, low, high);
 };
