@@ -7,18 +7,23 @@ var rotate = function(nums, k) {
     k = k % nums.length;
     let len = nums.length;
     
-        var temp = [];
-        
-        for(let i = len - k; i < len; i++){
-             temp.push(nums[i]);
-        }
-        
-        for(let i = len - 1; i >= k; i--){
-            nums[i] = nums[i - k]
-        }
-         for (let i = 0; i < k; i++) {
-            nums[i] = temp[i];
-        }
+    nums = nums.reverse();
     
-        return nums;
+    var low = 0, high = k - 1;
+    
+    while(low <= high){
+        [nums[low], nums[high]] = [nums[high], nums[low]];
+        low++;
+        high--;
+    }  
+    
+    var low = k , high = nums.length - 1;
+    
+    while(low <= high){
+        [nums[low], nums[high]] = [nums[high], nums[low]];
+        low++;
+        high--;
+    }
+    
+    return nums;
 };
