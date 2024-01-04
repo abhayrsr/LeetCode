@@ -14,7 +14,7 @@ var minOperations = function(nums) {
         }
     }
     
-    for(let [key, values] of map.entries()){
+    for(let key of map.keys()){
         
         if(map.get(key) == 1){
             return -1;
