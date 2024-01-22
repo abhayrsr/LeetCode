@@ -3,19 +3,14 @@
  * @return {number[]}
  */
 var findErrorNums = function(nums) {
-    let ans = new Array(2).fill(0);
-    for(const num of nums){
-        if(nums[Math.abs(num) - 1] < 0){
-            ans[0] = Math.abs(num);
-        } else {
-            nums[Math.abs(num) - 1] *= -1;
-        }
-    }
-    for(let i = 0; i < nums.length; i++){
-        if(nums[i] > 0){
-            ans[1] = i+1;
-        }
+    let x = 0, y = 0;
+    
+    for(let i = 1; i <= nums.length; i++){
+        x += nums[i-1] - i;
+        y += nums[i-1]**2 - i**2;
     }
     
-    return ans;
+    let missing = (y - x**2)/(2*x);
+    let duplicate = missing + x;
+    return [duplicate, missing];
 };
