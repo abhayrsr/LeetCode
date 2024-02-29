@@ -10,7 +10,50 @@
  * @return {boolean}
  */
 var isPalindrome = function(head) {
-     let slow = head, fast = head, prev, temp
+    let slow  = head, fast = head;
+    
+    while(fast && fast.next){
+        slow = slow.next;
+        fast = fast.next.next;
+    }
+    
+    let prev = slow;
+    slow = slow.next, prev.next = null
+    
+    while(slow){
+        let temp = slow.next;
+        slow.next = prev;
+        prev = slow;
+        slow = temp;
+    }
+    
+    let start = head, end = prev
+    while (end)
+        if (start.val !== end.val) return false
+        else start = start.next, end = end.next
+    return true
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+ let slow = head, fast = head, prev, temp
     while (fast && fast.next)
         slow = slow.next, fast = fast.next.next
     prev = slow, slow = slow.next, prev.next = null
@@ -21,4 +64,7 @@ var isPalindrome = function(head) {
         if (fast.val !== slow.val) return false
         else fast = fast.next, slow = slow.next
     return true
-};
+
+
+
+*/
