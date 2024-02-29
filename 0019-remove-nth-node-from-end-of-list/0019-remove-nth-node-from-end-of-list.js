@@ -20,11 +20,14 @@ var removeNthFromEnd = function(head, n) {
         tail = tail.next;
     }
     
+    if(!tail) return head.next;
+    
     while(tail){
         prev = prev.next;
         remove = remove.next;
         tail = tail.next;
     }
+    
     prev.next = remove.next;
-    return result.next
+    return head;
 };
