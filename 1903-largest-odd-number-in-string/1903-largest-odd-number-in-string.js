@@ -3,13 +3,14 @@
  * @return {string}
  */
 var largestOddNumber = function(num) {
-  let nums = num.split("");
-  for(let i = nums.length - 1; i >= 0; i--){
-    if(nums[i]%2 !== 0){
-      break;
-    } else {
-      nums.pop();
-    }
-  }
-  return nums.join("");
+    let index = -Infinity;
+    for(let i = num.length - 1; i >= 0; i--){
+        if(num.charAt(i)%2 !== 0){
+           index = i;
+           break;
+        } 
+     }
+    if(index === -Infinity){
+        return "";
+    } else return num.substring(0, index+1);
 };
