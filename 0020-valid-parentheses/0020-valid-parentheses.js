@@ -5,7 +5,7 @@
 var isValid = function(s) {
     let temp = [];
     
-    if(s.length === 1) return false;
+    // if(s.length === 1) return false;
     
     for(let i = 0; i < s.length; i++){
         let curr = s[i];
