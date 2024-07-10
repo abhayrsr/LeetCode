@@ -3,17 +3,13 @@
  * @return {boolean}
  */
 var check = function(nums) {
-    let diff = (nums[0] - nums[1]);
-    let check = 0
-    for(let i = 1; i < nums.length; i++){
-        if(nums[i-1] > nums[i]){
-            check++;
-        }
+    let count = 0;
+    for(let i = 0; i < nums.length - 1; i++){
+        if(nums[i] > nums[i+1]) count++
     }
     
-    if(nums[nums.length - 1] > nums[0]){
-        check++;
-    }
+    if(nums[nums.length - 1] > nums[0] && count) count++ 
     
-    return check < 2 ? true : false;
+    if(count < 2) return true
+    else return false
 };
