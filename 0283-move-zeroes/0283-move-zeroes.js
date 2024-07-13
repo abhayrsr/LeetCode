@@ -3,20 +3,22 @@
  * @return {void} Do not return anything, modify nums in-place instead.
  */
 var moveZeroes = function(nums) {
-    let i = 0, j = 1;
-    while(j !== nums.length){
-        if(nums[i] == 0 && nums[j] == 0){
-            j++;
-        }
-        else if(nums[i] == 0 && nums[j] !== 0){
-            [nums[i], nums[j]] = [nums[j], nums[i]];
-            i++;
-            j++;
-        }
-        else{
-            i++;
-            j++;
+    let countZero = 0, pointer = 0;
+    for(let i = 0; i < nums.length; i++){
+        if(nums[i] === 0){
+            countZero++
+        } else {
+            nums[pointer] = nums[i]
+            pointer++;
         }
     }
-    return nums;
+    
+    let tracker = nums.length - 1
+    while(countZero !== 0){
+        nums[tracker] = 0
+        tracker--
+        countZero--
+    }
+    
+    return nums
 };
