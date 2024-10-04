@@ -22,6 +22,7 @@ var checkInclusion = function (s1, s2) {
       right++;
     } else {
       const charLeft = s2[left++];
+        console.log(charLeft)
       map.set(charLeft, map.get(charLeft) + 1);
     }
 
