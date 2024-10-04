@@ -14,10 +14,11 @@ var checkInclusion = function (s1, s2) {
           map.set(charRight, map.get(charRight) - 1)
           right++
       } else if(!map.has(charRight)){
-          while(left != right){
+           while(left != right){
               const charLeft = s2[left++];
               if (map.has(charLeft)) map.set(charLeft, map.get(charLeft) + 1);
               }
+          
               left++;
               right++;
           
