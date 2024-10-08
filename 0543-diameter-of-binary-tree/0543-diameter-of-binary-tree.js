@@ -25,5 +25,5 @@ var diameterOfBinaryTree = function(root) {
     }
 
     return tracker;
-
+    
 };
