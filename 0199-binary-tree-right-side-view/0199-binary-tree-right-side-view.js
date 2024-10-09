@@ -18,7 +18,7 @@ var rightSideView = function(root) {
     function dfs(root, level) {
         if(!root)
             return
-        if(!result[level] && result.length === level)
+        if(result.length === level)
             result.push(root.val)
         // console.log(root.val, level)
         dfs(root.right, level + 1)
