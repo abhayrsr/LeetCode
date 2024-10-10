@@ -10,8 +10,9 @@ var characterReplacement = function(s, k) {
     while(right < s.length){
         const char = s.charAt(right);
         visited[char] = visited[char] ? visited[char] + 1 : 1;
-        
-        if(visited[char] > max) max = visited[char];
+       
+        // if(visited[char] > max) max = visited[char];
+        max = Math.max(visited[char], max)
         
         while((right - left + 1) - max > k){
             visited[s.charAt(left)]--;
