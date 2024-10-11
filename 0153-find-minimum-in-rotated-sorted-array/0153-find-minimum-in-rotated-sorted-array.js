@@ -3,17 +3,25 @@
  * @return {number}
  */
 var findMin = function(nums) {
-    let low = 0, high = nums.length - 1, ans = Infinity;
+    let low = 0, high = nums.length - 1;
+    let res;
     while(low <= high){
-        let mid = parseInt((low+high)/2);
-        if(nums[low] <= nums[mid]){
-            ans = Math.min(ans, nums[low]);
-            low = mid+1;
-        }
-        else{
-            ans = Math.min(ans, nums[mid]);
-            high = mid-1;
+        let mid = parseInt((low + high)/2)
+        
+        if(nums[mid]  > nums[low] && nums[mid] > nums[high]){
+            low = mid
+        } else if(nums[mid] < nums[low] && nums[mid] < nums[high]){
+            high = mid
+        } else if(nums[mid] === nums[low] || nums[mid] === nums[high]){
+            res = Math.min(nums[low], nums[high])
+            console.log(res)
+            break;
+        } else if (nums[mid] > nums[low] && nums[mid] < nums[high]){
+            high = mid
+        } else if(nums[mid] < nums[low] && nums[mid] > nums[high]){
+            low = mid
         }
     }
-    return ans;
+    
+    return res;
 };
