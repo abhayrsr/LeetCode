@@ -3,17 +3,35 @@
  * @return {boolean}
  */
 var isValid = function(s) {
-    let temp = [];
+    let stack = [];
     
     for(let i = 0; i < s.length; i++){
-        let curr = s[i];
-        let tempLast = temp[temp.length - 1];
-        
-        if(curr === "(") temp.push(")");
-        else if(curr === "{") temp.push("}");
-        else if(curr === "[") temp.push("]");
-        else if(curr === tempLast) temp.pop();
-        else return false;
-    }
-    return temp.length === 0;
+        if(s.charAt(i) === "("){
+                stack.push(")")
+            } else if(s.charAt(i) === "{"){
+                stack.push("}")
+            } else if(s.charAt(i) === "[") {
+                stack.push("]")
+            } else if(s.charAt(i) === ")"){
+                if(stack[stack.length - 1] === ")"){
+                    stack.pop()
+                } else {
+                    return false
+                }
+            } else if(s.charAt(i) === "}"){
+                if(stack[stack.length - 1] === "}"){
+                    stack.pop()
+                } else {
+                    return false
+                }
+            } else if(s.charAt(i) === "]"){
+                if(stack[stack.length - 1] === "]"){
+                    stack.pop()
+                } else {
+                    return false
+                }
+            }
+        }
+    
+    return stack.length === 0
 };
