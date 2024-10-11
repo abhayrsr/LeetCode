@@ -4,22 +4,18 @@
  */
 var findMin = function(nums) {
     let low = 0, high = nums.length - 1;
-    let res;
+    let res = Infinity;
     while(low <= high){
         let mid = parseInt((low + high)/2)
         
-        if(nums[mid]  > nums[low] && nums[mid] > nums[high]){
-            low = mid
-        } else if(nums[mid] < nums[low] && nums[mid] < nums[high]){
-            high = mid
-        } else if(nums[mid] === nums[low] || nums[mid] === nums[high]){
-            res = Math.min(nums[low], nums[high])
-            break;
-        } else if (nums[mid] > nums[low] && nums[mid] < nums[high]){
-            high = mid
+        if(nums[low] <= nums[mid]){
+            res = Math.min(res, nums[low])
+            low = mid + 1;
         } else {
-            low = mid
+            res = Math.min(res, nums[mid])
+            high = mid - 1;
         }
+
     }
     
     return res;
