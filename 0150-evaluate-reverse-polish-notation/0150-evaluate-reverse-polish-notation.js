@@ -3,28 +3,27 @@
  * @return {number}
  */
 var evalRPN = function(tokens) {
-     const stack = [];
-    for (const s of tokens) {
-        const c = s.charAt(0);
-        if (c === '+') {
-            const b = stack.pop();
-            const a = stack.pop();
-            stack.push(a + b);
-        } else if (c === '-' && s.length === 1) {
-            const b = stack.pop();
-            const a = stack.pop();
-            stack.push(a - b);
-        } else if (c === '*') {
-            const b = stack.pop();
-            const a = stack.pop();
-            stack.push(a * b);
-        } else if (c === '/') {
-            const b = stack.pop();
-            const a = stack.pop();
-            stack.push((a / b) | 0); // Truncate towards zero
+    let stack = [];
+    
+    for(let i = 0; i < tokens.length; i++){
+        if(tokens[i] !== '+' && tokens[i] !== '-' && tokens[i] !== '*' && tokens[i] !== '/'){
+            stack.push(tokens[i])
         } else {
-            stack.push(parseInt(s));
+            let p;
+            if(tokens[i] === '+'){
+                p = Number(stack[stack.length - 2]) + Number(stack[stack.length - 1])
+            } else if(tokens[i] === '-'){
+                p = stack[stack.length - 2] - stack[stack.length - 1]
+            } else if(tokens[i] === '*'){
+                p = stack[stack.length - 2] * stack[stack.length - 1]
+            } else {
+                p = parseInt(stack[stack.length - 2] / stack[stack.length - 1])
+            }
+            stack.pop()
+            stack.pop()
+            stack.push(p)
+            // console.log(stack)
         }
     }
-    return stack[0];
+    return Number(stack[0])
 };
