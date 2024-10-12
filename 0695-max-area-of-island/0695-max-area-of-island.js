@@ -7,7 +7,7 @@ var maxAreaOfIsland = function(grid) {
     let set = new Set();
     
     function dfs(r, c){
-        if(r < 0 || r >= rows || c < 0 || c >= columns || grid[r][c] == 0 || (set.has((r + ',' + c))== true)){
+        if(r < 0 || r >= rows || c < 0 || c >= columns || grid[r][c] == "0" || (set.has((r + ',' + c))== true)){
             return 0;
         }
         set.add((r + ',' + c));
