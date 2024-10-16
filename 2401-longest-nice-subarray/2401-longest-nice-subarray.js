@@ -11,7 +11,7 @@ var longestNiceSubarray = function(nums) {
             let first = nums[right] 
             let second = nums[i]
             
-            if((first & second) !== 0){
+            if((first & second) != 0){
                 flag = false;
                 break;
             }
