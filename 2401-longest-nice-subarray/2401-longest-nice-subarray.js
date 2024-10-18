@@ -3,15 +3,14 @@
  * @return {number}
  */
 var longestNiceSubarray = function(nums) {
-    let maxLen = 1, left = 0, right = 1
+    let right = 1, left = 0, maxLen = 1
     
     while(right < nums.length){
-        let flag = true;
-        for(let i = right-1; i >= left; i--){
-            let first = nums[right] 
-            let second = nums[i]
-            
-            if((first & second) != 0){
+        let second = nums[right]
+        let flag = true
+        
+        for(let i = right - 1; i >= left; i--){
+            if((nums[i] & second) != 0){
                 flag = false;
                 break;
             }
@@ -19,11 +18,12 @@ var longestNiceSubarray = function(nums) {
         
         if(flag){
             maxLen = Math.max(maxLen, right - left + 1)
-            right++;
+            right++
         } else {
-            left++;
+            left++
         }
     }
+    
     return maxLen;
 };
     
