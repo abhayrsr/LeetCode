@@ -5,23 +5,21 @@
  */
 var characterReplacement = function(s, k) {
     let left = 0, right = 0, max = 0;
-    let visited = {}
+    let map = new Map();
     
     while(right < s.length){
-        const char = s.charAt(right);
-        visited[char] = visited[char] ? visited[char] + 1 : 1;
-       
-        // if(visited[char] > max) max = visited[char];
-        max = Math.max(visited[char], max)
+        map.set(s[right], (map.get(s[right]) || 0) + 1)
+        
+        max = Math.max(max, map.get(s[right]))
         
         while((right - left + 1) - max > k){
-            visited[s.charAt(left)]--;
-            left++;
+            map.set(s[left], map.get(s[left]) - 1)
+            left++
         }
         
         right++
     }
     
-    return right - left;
+    return right - left
     
 };
