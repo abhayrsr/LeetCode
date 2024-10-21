@@ -11,14 +11,14 @@ var findAnagrams = function(s, p) {
   let pArr = new Array(26).fill(0);
 
   for (let i = 0; i < pLen; i++) {
-    sArr[s.charCodeAt(i) - 97]++;
-    pArr[p.charCodeAt(i) - 97]++;
+    sArr[s.charCodeAt(i) - 'a'.charCodeAt(0)]++;
+    pArr[p.charCodeAt(i) - 'a'.charCodeAt(0)]++;
   }
 
   for (let i = 0; i < sLen; i++) {
     if (isAnagram(sArr, pArr)) result.push(i);
-    sArr[s.charCodeAt(i) - 97]--;
-    sArr[s.charCodeAt(i + pLen) - 97]++;
+    sArr[s.charCodeAt(i) - 'a'.charCodeAt(0)]--;
+    sArr[s.charCodeAt(i + pLen) - 'a'.charCodeAt(0)]++;
   }
 
   function isAnagram(sArr, pArr) {
