@@ -4,51 +4,54 @@
  * @return {string}
  */
 var minWindow = function(s, t) {
-    if(t.length>s.length)
-        return "";
+    if(t == "") return ""
     
-    let map1 = {};
-    for(let i=0;i<t.length;i++){
-        if(map1[t[i]]){
-            map1[t[i]]++;
+    let countT = new Map(), window = new Map()
+    
+    for(let c = 0; c < t.length; c++){
+        if(countT.has(t[c])){
+            countT.set(t[c], countT.get(t[c]) + 1)
+        } else {
+            countT.set(t[c], 1)
         }
-        else
-            map1[t[i]] = 1;
     }
     
-    let count = 0;
-    let ans = "";
-    let map = {};
-    let j = 0;
-    for(let i=0;i<s.length;i++){
-        if(map1[s[i]]){
-           // console.log(count)
-           if(map[s[i]]){
-               map[s[i]]++;
-           }
-            else
-                map[s[i]] = 1;
-            if(map[s[i]]<=map1[s[i]]){
-                count++;
-            }
-        }
-        if(count==t.length){
-             
-            while(count==t.length&&j<s.length){
-                let temp = s.slice(j,i+1);
-               
-                if(ans.length>temp.length||ans===""){
-                  
-                    ans = temp;
-                }
-                    if(map[s[j]]-1<map1[s[j]])
-                        count--;
-                    map[s[j]]--;
-                
-                j++;
-            }
+    let have = 0, need = countT.size;
+    let res = [-1, -1], resLen = Infinity;
+    let l = 0;
+    
+    for(let r = 0; r < s.length; r++){
+        let c = s[r];
+        if(window.has(c)) {
+            window.set(c, window.get(c) + 1)
+        } else {
+            window.set(c, 1)
         }
         
+        if(countT.has(c) && (window.get(c) === countT.get(c))){
+            have += 1
+        }
+        // console.log(have, need)
+        
+        while(have === need){
+            if(r - l + 1 < resLen){
+                res = [l, r]
+                resLen = (r - l + 1)
+            }
+            window.set(s[l], window.get(s[l]) - 1)
+            if(countT.has(s[l]) && (window.get(s[l]) < countT.get(s[l]))){
+                have -= 1
+            }
+            l += 1
+        }
     }
-    return ans;
+    
+    if(resLen === Infinity) return ""
+    else {
+        let ans = ""
+        for(let i = res[0]; i <= res[1]; i++){
+            ans += s[i]
+        }
+        return ans;
+    }
 };
