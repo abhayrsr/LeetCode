@@ -3,19 +3,17 @@
  * @return {number[][]}
  */
 var merge = function(intervals) {
-    let ans = [];
-    if(intervals.length == 1) return intervals;
-    intervals.sort((a,b) => a[0] - b[0]);
-    let temp = intervals[0];
-    for (let i = 0; i < intervals.length; i++) {
-        if(intervals[i][0] <= temp[1]){
-            temp[1] = Math.max(temp[1], intervals[i][1])
+    intervals.sort((a,b) => a[0] - b[0])
+    let i = 0, j = 1;
+    let answer = []
+    
+    for(let i = 0; i < intervals.length; i++){
+        if(answer.length === 0 || intervals[i][0] > answer[answer.length - 1][1]){
+            answer.push(intervals[i])
         } else {
-            ans.push(temp);
-            temp = intervals[i];
+            answer[answer.length-1][1] = Math.max(answer[answer.length - 1][1], intervals[i][1])
         }
     }
-    ans.push(temp);
-
-    return ans;
+    
+    return answer;
 };
