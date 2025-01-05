@@ -10,6 +10,7 @@ You can check the profile here: https://leetcode.com/Abhay_Raj/
 | ------- |
 | [0739-daily-temperatures](https://github.com/abhayrsr/LeetCode/tree/master/0739-daily-temperatures) |
 | [2358-number-of-ways-to-split-array](https://github.com/abhayrsr/LeetCode/tree/master/2358-number-of-ways-to-split-array) |
+| [2465-shifting-letters-ii](https://github.com/abhayrsr/LeetCode/tree/master/2465-shifting-letters-ii) |
 | [2691-count-vowel-strings-in-ranges](https://github.com/abhayrsr/LeetCode/tree/master/2691-count-vowel-strings-in-ranges) |
 ## Stack
 |  |
@@ -24,6 +25,7 @@ You can check the profile here: https://leetcode.com/Abhay_Raj/
 | ------- |
 | [1537-maximum-score-after-splitting-a-string](https://github.com/abhayrsr/LeetCode/tree/master/1537-maximum-score-after-splitting-a-string) |
 | [2059-unique-length-3-palindromic-subsequences](https://github.com/abhayrsr/LeetCode/tree/master/2059-unique-length-3-palindromic-subsequences) |
+| [2465-shifting-letters-ii](https://github.com/abhayrsr/LeetCode/tree/master/2465-shifting-letters-ii) |
 | [2691-count-vowel-strings-in-ranges](https://github.com/abhayrsr/LeetCode/tree/master/2691-count-vowel-strings-in-ranges) |
 ## Prefix Sum
 |  |
@@ -31,6 +33,7 @@ You can check the profile here: https://leetcode.com/Abhay_Raj/
 | [1537-maximum-score-after-splitting-a-string](https://github.com/abhayrsr/LeetCode/tree/master/1537-maximum-score-after-splitting-a-string) |
 | [2059-unique-length-3-palindromic-subsequences](https://github.com/abhayrsr/LeetCode/tree/master/2059-unique-length-3-palindromic-subsequences) |
 | [2358-number-of-ways-to-split-array](https://github.com/abhayrsr/LeetCode/tree/master/2358-number-of-ways-to-split-array) |
+| [2465-shifting-letters-ii](https://github.com/abhayrsr/LeetCode/tree/master/2465-shifting-letters-ii) |
 | [2691-count-vowel-strings-in-ranges](https://github.com/abhayrsr/LeetCode/tree/master/2691-count-vowel-strings-in-ranges) |
 ## Hash Table
 |  |
