@@ -7,25 +7,26 @@
  * @return {number}
  */
 var countPalindromicSubsequence = function(s) {
-    let rightCount = Array(26).fill(0);
-    let leftCount = Array(26).fill(0);
-    let subsequences = new Set();
+    let left = Array(26).fill(0);
+    let right = Array(26).fill(0);
+    let subsequence = new Set();
 
     for(let char of s){
-        rightCount[char.charCodeAt(0) - 'a'.charCodeAt(0)]++
+        right[char.charCodeAt(0) - 'a'.charCodeAt(0)]++;
     }
 
     for(let char of s){
-        let t = char.charCodeAt(0) - 'a'.charCodeAt(0);
-        rightCount[t]--;
+        let mid = char.charCodeAt(0) - 'a'.charCodeAt(0);
+        right[mid]--;
 
         for(let j = 0; j < 26; j++){
-            if(leftCount[j] > 0 && rightCount[j] > 0){
-                subsequences.add(26 * t + j);
+            if(left[j] > 0 && right[j] > 0){
+                subsequence.add(26 * mid + j);
             }
         }
 
-        leftCount[t]++;
+        left[mid]++;
     }
-    return subsequences.size;
+
+    return subsequence.size;
 };
