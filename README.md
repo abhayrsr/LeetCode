@@ -67,4 +67,12 @@ You can check the profile here: https://leetcode.com/Abhay_Raj/
 |  |
 | ------- |
 | [3309-count-prefix-and-suffix-pairs-i](https://github.com/abhayrsr/LeetCode/tree/master/3309-count-prefix-and-suffix-pairs-i) |
+## Linked List
+|  |
+| ------- |
+| [0206-reverse-linked-list](https://github.com/abhayrsr/LeetCode/tree/master/0206-reverse-linked-list) |
+## Recursion
+|  |
+| ------- |
+| [0206-reverse-linked-list](https://github.com/abhayrsr/LeetCode/tree/master/0206-reverse-linked-list) |
 <!---LeetCode Topics End-->
