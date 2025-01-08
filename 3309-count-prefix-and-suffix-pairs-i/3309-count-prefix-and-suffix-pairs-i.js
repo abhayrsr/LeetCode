@@ -18,7 +18,7 @@ var countPrefixSuffixPairs = function(words) {
                 suff += words[j][k]
             }
 
-            console.log(words[i], pre, suff)
+            // console.log(words[i], pre, suff)
 
             if((words[i] === pre) && (pre === suff)){
                 count++
