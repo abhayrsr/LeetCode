@@ -64,6 +64,7 @@ You can check the profile here: https://leetcode.com/Abhay_Raj/
 |  |
 | ------- |
 | [2059-unique-length-3-palindromic-subsequences](https://github.com/abhayrsr/LeetCode/tree/master/2059-unique-length-3-palindromic-subsequences) |
+| [2509-minimize-xor](https://github.com/abhayrsr/LeetCode/tree/master/2509-minimize-xor) |
 | [2766-find-the-prefix-common-array-of-two-arrays](https://github.com/abhayrsr/LeetCode/tree/master/2766-find-the-prefix-common-array-of-two-arrays) |
 ## String Matching
 |  |
@@ -99,6 +100,7 @@ You can check the profile here: https://leetcode.com/Abhay_Raj/
 | ------- |
 | [1502-construct-k-palindrome-strings](https://github.com/abhayrsr/LeetCode/tree/master/1502-construct-k-palindrome-strings) |
 | [2221-check-if-a-parentheses-string-can-be-valid](https://github.com/abhayrsr/LeetCode/tree/master/2221-check-if-a-parentheses-string-can-be-valid) |
+| [2509-minimize-xor](https://github.com/abhayrsr/LeetCode/tree/master/2509-minimize-xor) |
 ## Counting
 |  |
 | ------- |
