@@ -1,32 +1,31 @@
-var minimizeXor = function(num1, num2) {
-    const countSetBits = (n) => {
+var minimizeXor = function (num1, num2) {
+    let result = num1;
+    function countSetBits(num) {
         let count = 0;
-        while (n > 0) {
-            count += n & 1;
-            n >>= 1;
+        while (num > 0) {
+            count += num & 1;
+            num = num >> 1;
         }
         return count;
-    };
+    }
 
-    let targetBits = countSetBits(num2);
-    let currentBits = countSetBits(num1);
-    let result = num1;
+    let countSetBits1 = countSetBits(num1);
+    let countSetBits2 = countSetBits(num2);
+    let bit = 0;
 
-    if (currentBits < targetBits) {
-        let bit = 0;
-        while (currentBits < targetBits) {
-            if ((result & (1 << bit)) === 0) {
-                result |= (1 << bit);
-                currentBits++;
+    if(countSetBits1 < countSetBits2){
+        while(countSetBits1 < countSetBits2){
+            if((result & (1 << bit)) === 0){
+                result |= 1 << bit
+                countSetBits1++
             }
             bit++;
         }
-    } else if (currentBits > targetBits) {
-        let bit = 0;
-        while (currentBits > targetBits) {
-            if ((result & (1 << bit)) !== 0) {
+    } else if(countSetBits1 > countSetBits2) {
+        while(countSetBits1 > countSetBits2){
+            if((result & (1 << bit)) !== 0){
                 result &= ~(1 << bit);
-                currentBits--;
+                countSetBits1--
             }
             bit++;
         }
