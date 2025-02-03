@@ -68,6 +68,7 @@ You can check the profile here: https://leetcode.com/Abhay_Raj/
 ## Hash Table
 |  |
 | ------- |
+| [0138-copy-list-with-random-pointer](https://github.com/abhayrsr/LeetCode/tree/master/0138-copy-list-with-random-pointer) |
 | [0141-linked-list-cycle](https://github.com/abhayrsr/LeetCode/tree/master/0141-linked-list-cycle) |
 | [0952-word-subsets](https://github.com/abhayrsr/LeetCode/tree/master/0952-word-subsets) |
 | [1502-construct-k-palindrome-strings](https://github.com/abhayrsr/LeetCode/tree/master/1502-construct-k-palindrome-strings) |
@@ -105,6 +106,7 @@ You can check the profile here: https://leetcode.com/Abhay_Raj/
 |  |
 | ------- |
 | [0021-merge-two-sorted-lists](https://github.com/abhayrsr/LeetCode/tree/master/0021-merge-two-sorted-lists) |
+| [0138-copy-list-with-random-pointer](https://github.com/abhayrsr/LeetCode/tree/master/0138-copy-list-with-random-pointer) |
 | [0141-linked-list-cycle](https://github.com/abhayrsr/LeetCode/tree/master/0141-linked-list-cycle) |
 | [0143-reorder-list](https://github.com/abhayrsr/LeetCode/tree/master/0143-reorder-list) |
 | [0206-reverse-linked-list](https://github.com/abhayrsr/LeetCode/tree/master/0206-reverse-linked-list) |
