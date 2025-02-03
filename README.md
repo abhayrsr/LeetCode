@@ -8,6 +8,7 @@ You can check the profile here: https://leetcode.com/Abhay_Raj/
 ## Array
 |  |
 | ------- |
+| [0287-find-the-duplicate-number](https://github.com/abhayrsr/LeetCode/tree/master/0287-find-the-duplicate-number) |
 | [0407-trapping-rain-water-ii](https://github.com/abhayrsr/LeetCode/tree/master/0407-trapping-rain-water-ii) |
 | [0739-daily-temperatures](https://github.com/abhayrsr/LeetCode/tree/master/0739-daily-temperatures) |
 | [0854-making-a-large-island](https://github.com/abhayrsr/LeetCode/tree/master/0854-making-a-large-island) |
@@ -79,6 +80,7 @@ You can check the profile here: https://leetcode.com/Abhay_Raj/
 ## Bit Manipulation
 |  |
 | ------- |
+| [0287-find-the-duplicate-number](https://github.com/abhayrsr/LeetCode/tree/master/0287-find-the-duplicate-number) |
 | [2059-unique-length-3-palindromic-subsequences](https://github.com/abhayrsr/LeetCode/tree/master/2059-unique-length-3-palindromic-subsequences) |
 | [2509-minimize-xor](https://github.com/abhayrsr/LeetCode/tree/master/2509-minimize-xor) |
 | [2533-bitwise-xor-of-all-pairings](https://github.com/abhayrsr/LeetCode/tree/master/2533-bitwise-xor-of-all-pairings) |
@@ -133,6 +135,7 @@ You can check the profile here: https://leetcode.com/Abhay_Raj/
 | ------- |
 | [0141-linked-list-cycle](https://github.com/abhayrsr/LeetCode/tree/master/0141-linked-list-cycle) |
 | [0143-reorder-list](https://github.com/abhayrsr/LeetCode/tree/master/0143-reorder-list) |
+| [0287-find-the-duplicate-number](https://github.com/abhayrsr/LeetCode/tree/master/0287-find-the-duplicate-number) |
 ## Brainteaser
 |  |
 | ------- |
@@ -203,4 +206,8 @@ You can check the profile here: https://leetcode.com/Abhay_Raj/
 | [0820-find-eventual-safe-states](https://github.com/abhayrsr/LeetCode/tree/master/0820-find-eventual-safe-states) |
 | [1558-course-schedule-iv](https://github.com/abhayrsr/LeetCode/tree/master/1558-course-schedule-iv) |
 | [2246-maximum-employees-to-be-invited-to-a-meeting](https://github.com/abhayrsr/LeetCode/tree/master/2246-maximum-employees-to-be-invited-to-a-meeting) |
+## Binary Search
+|  |
+| ------- |
+| [0287-find-the-duplicate-number](https://github.com/abhayrsr/LeetCode/tree/master/0287-find-the-duplicate-number) |
 <!---LeetCode Topics End-->
