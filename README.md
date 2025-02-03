@@ -33,6 +33,7 @@ You can check the profile here: https://leetcode.com/Abhay_Raj/
 ## Stack
 |  |
 | ------- |
+| [0143-reorder-list](https://github.com/abhayrsr/LeetCode/tree/master/0143-reorder-list) |
 | [0739-daily-temperatures](https://github.com/abhayrsr/LeetCode/tree/master/0739-daily-temperatures) |
 | [2221-check-if-a-parentheses-string-can-be-valid](https://github.com/abhayrsr/LeetCode/tree/master/2221-check-if-a-parentheses-string-can-be-valid) |
 ## Monotonic Stack
@@ -105,11 +106,13 @@ You can check the profile here: https://leetcode.com/Abhay_Raj/
 | ------- |
 | [0021-merge-two-sorted-lists](https://github.com/abhayrsr/LeetCode/tree/master/0021-merge-two-sorted-lists) |
 | [0141-linked-list-cycle](https://github.com/abhayrsr/LeetCode/tree/master/0141-linked-list-cycle) |
+| [0143-reorder-list](https://github.com/abhayrsr/LeetCode/tree/master/0143-reorder-list) |
 | [0206-reverse-linked-list](https://github.com/abhayrsr/LeetCode/tree/master/0206-reverse-linked-list) |
 ## Recursion
 |  |
 | ------- |
 | [0021-merge-two-sorted-lists](https://github.com/abhayrsr/LeetCode/tree/master/0021-merge-two-sorted-lists) |
+| [0143-reorder-list](https://github.com/abhayrsr/LeetCode/tree/master/0143-reorder-list) |
 | [0206-reverse-linked-list](https://github.com/abhayrsr/LeetCode/tree/master/0206-reverse-linked-list) |
 ## Greedy
 |  |
@@ -127,6 +130,7 @@ You can check the profile here: https://leetcode.com/Abhay_Raj/
 |  |
 | ------- |
 | [0141-linked-list-cycle](https://github.com/abhayrsr/LeetCode/tree/master/0141-linked-list-cycle) |
+| [0143-reorder-list](https://github.com/abhayrsr/LeetCode/tree/master/0143-reorder-list) |
 ## Brainteaser
 |  |
 | ------- |
