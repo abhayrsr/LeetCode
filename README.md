@@ -29,6 +29,7 @@ You can check the profile here: https://leetcode.com/Abhay_Raj/
 | [2766-find-the-prefix-common-array-of-two-arrays](https://github.com/abhayrsr/LeetCode/tree/master/2766-find-the-prefix-common-array-of-two-arrays) |
 | [2792-neighboring-bitwise-xor](https://github.com/abhayrsr/LeetCode/tree/master/2792-neighboring-bitwise-xor) |
 | [3309-count-prefix-and-suffix-pairs-i](https://github.com/abhayrsr/LeetCode/tree/master/3309-count-prefix-and-suffix-pairs-i) |
+| [3372-longest-strictly-increasing-or-strictly-decreasing-subarray](https://github.com/abhayrsr/LeetCode/tree/master/3372-longest-strictly-increasing-or-strictly-decreasing-subarray) |
 ## Stack
 |  |
 | ------- |
