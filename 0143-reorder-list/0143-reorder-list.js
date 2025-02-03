@@ -41,5 +41,5 @@ var reorderList = function(head) {
         l2.next = temp1;
         l2 = temp2; 
     }
-    console.log(head)
+    
 };
