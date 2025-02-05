@@ -50,6 +50,7 @@ You can check the profile here: https://leetcode.com/Abhay_Raj/
 | [1524-string-matching-in-an-array](https://github.com/abhayrsr/LeetCode/tree/master/1524-string-matching-in-an-array) |
 | [1537-maximum-score-after-splitting-a-string](https://github.com/abhayrsr/LeetCode/tree/master/1537-maximum-score-after-splitting-a-string) |
 | [1895-minimum-number-of-operations-to-move-all-balls-to-each-box](https://github.com/abhayrsr/LeetCode/tree/master/1895-minimum-number-of-operations-to-move-all-balls-to-each-box) |
+| [1915-check-if-one-string-swap-can-make-strings-equal](https://github.com/abhayrsr/LeetCode/tree/master/1915-check-if-one-string-swap-can-make-strings-equal) |
 | [2059-unique-length-3-palindromic-subsequences](https://github.com/abhayrsr/LeetCode/tree/master/2059-unique-length-3-palindromic-subsequences) |
 | [2221-check-if-a-parentheses-string-can-be-valid](https://github.com/abhayrsr/LeetCode/tree/master/2221-check-if-a-parentheses-string-can-be-valid) |
 | [2292-counting-words-with-a-given-prefix](https://github.com/abhayrsr/LeetCode/tree/master/2292-counting-words-with-a-given-prefix) |
@@ -74,6 +75,7 @@ You can check the profile here: https://leetcode.com/Abhay_Raj/
 | [0141-linked-list-cycle](https://github.com/abhayrsr/LeetCode/tree/master/0141-linked-list-cycle) |
 | [0952-word-subsets](https://github.com/abhayrsr/LeetCode/tree/master/0952-word-subsets) |
 | [1502-construct-k-palindrome-strings](https://github.com/abhayrsr/LeetCode/tree/master/1502-construct-k-palindrome-strings) |
+| [1915-check-if-one-string-swap-can-make-strings-equal](https://github.com/abhayrsr/LeetCode/tree/master/1915-check-if-one-string-swap-can-make-strings-equal) |
 | [2059-unique-length-3-palindromic-subsequences](https://github.com/abhayrsr/LeetCode/tree/master/2059-unique-length-3-palindromic-subsequences) |
 | [2685-first-completely-painted-row-or-column](https://github.com/abhayrsr/LeetCode/tree/master/2685-first-completely-painted-row-or-column) |
 | [2766-find-the-prefix-common-array-of-two-arrays](https://github.com/abhayrsr/LeetCode/tree/master/2766-find-the-prefix-common-array-of-two-arrays) |
@@ -130,6 +132,7 @@ You can check the profile here: https://leetcode.com/Abhay_Raj/
 | ------- |
 | [1396-count-servers-that-communicate](https://github.com/abhayrsr/LeetCode/tree/master/1396-count-servers-that-communicate) |
 | [1502-construct-k-palindrome-strings](https://github.com/abhayrsr/LeetCode/tree/master/1502-construct-k-palindrome-strings) |
+| [1915-check-if-one-string-swap-can-make-strings-equal](https://github.com/abhayrsr/LeetCode/tree/master/1915-check-if-one-string-swap-can-make-strings-equal) |
 | [3455-minimum-length-of-string-after-operations](https://github.com/abhayrsr/LeetCode/tree/master/3455-minimum-length-of-string-after-operations) |
 ## Two Pointers
 |  |
