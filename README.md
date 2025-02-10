@@ -40,6 +40,7 @@ You can check the profile here: https://leetcode.com/Abhay_Raj/
 | [0143-reorder-list](https://github.com/abhayrsr/LeetCode/tree/master/0143-reorder-list) |
 | [0739-daily-temperatures](https://github.com/abhayrsr/LeetCode/tree/master/0739-daily-temperatures) |
 | [2221-check-if-a-parentheses-string-can-be-valid](https://github.com/abhayrsr/LeetCode/tree/master/2221-check-if-a-parentheses-string-can-be-valid) |
+| [3447-clear-digits](https://github.com/abhayrsr/LeetCode/tree/master/3447-clear-digits) |
 ## Monotonic Stack
 |  |
 | ------- |
@@ -59,6 +60,7 @@ You can check the profile here: https://leetcode.com/Abhay_Raj/
 | [2465-shifting-letters-ii](https://github.com/abhayrsr/LeetCode/tree/master/2465-shifting-letters-ii) |
 | [2691-count-vowel-strings-in-ranges](https://github.com/abhayrsr/LeetCode/tree/master/2691-count-vowel-strings-in-ranges) |
 | [3309-count-prefix-and-suffix-pairs-i](https://github.com/abhayrsr/LeetCode/tree/master/3309-count-prefix-and-suffix-pairs-i) |
+| [3447-clear-digits](https://github.com/abhayrsr/LeetCode/tree/master/3447-clear-digits) |
 | [3455-minimum-length-of-string-after-operations](https://github.com/abhayrsr/LeetCode/tree/master/3455-minimum-length-of-string-after-operations) |
 ## Prefix Sum
 |  |
@@ -234,4 +236,8 @@ You can check the profile here: https://leetcode.com/Abhay_Raj/
 |  |
 | ------- |
 | [2448-count-number-of-bad-pairs](https://github.com/abhayrsr/LeetCode/tree/master/2448-count-number-of-bad-pairs) |
+## Simulation
+|  |
+| ------- |
+| [3447-clear-digits](https://github.com/abhayrsr/LeetCode/tree/master/3447-clear-digits) |
 <!---LeetCode Topics End-->
