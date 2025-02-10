@@ -4,12 +4,15 @@
  */
 var clearDigits = function(s) {
     let stack = [];
-    for (let c of s) {
-        if (!isNaN(c)) {
-            if (stack.length) stack.pop();
+
+    for(let i = 0; i < s.length; i++){
+        
+        if(s.charCodeAt(i) < 97 || s.charCodeAt(i) > 122){
+            stack.pop();
         } else {
-            stack.push(c);
+            stack.push(s.charAt(i));
         }
     }
-    return stack.join("");
+
+    return stack.join("")
 };
