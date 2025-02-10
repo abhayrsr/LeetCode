@@ -77,6 +77,7 @@ You can check the profile here: https://leetcode.com/Abhay_Raj/
 | ------- |
 | [0138-copy-list-with-random-pointer](https://github.com/abhayrsr/LeetCode/tree/master/0138-copy-list-with-random-pointer) |
 | [0141-linked-list-cycle](https://github.com/abhayrsr/LeetCode/tree/master/0141-linked-list-cycle) |
+| [0146-lru-cache](https://github.com/abhayrsr/LeetCode/tree/master/0146-lru-cache) |
 | [0952-word-subsets](https://github.com/abhayrsr/LeetCode/tree/master/0952-word-subsets) |
 | [1364-tuple-with-same-product](https://github.com/abhayrsr/LeetCode/tree/master/1364-tuple-with-same-product) |
 | [1502-construct-k-palindrome-strings](https://github.com/abhayrsr/LeetCode/tree/master/1502-construct-k-palindrome-strings) |
@@ -121,6 +122,7 @@ You can check the profile here: https://leetcode.com/Abhay_Raj/
 | [0138-copy-list-with-random-pointer](https://github.com/abhayrsr/LeetCode/tree/master/0138-copy-list-with-random-pointer) |
 | [0141-linked-list-cycle](https://github.com/abhayrsr/LeetCode/tree/master/0141-linked-list-cycle) |
 | [0143-reorder-list](https://github.com/abhayrsr/LeetCode/tree/master/0143-reorder-list) |
+| [0146-lru-cache](https://github.com/abhayrsr/LeetCode/tree/master/0146-lru-cache) |
 | [0206-reverse-linked-list](https://github.com/abhayrsr/LeetCode/tree/master/0206-reverse-linked-list) |
 ## Recursion
 |  |
@@ -227,6 +229,7 @@ You can check the profile here: https://leetcode.com/Abhay_Raj/
 ## Design
 |  |
 | ------- |
+| [0146-lru-cache](https://github.com/abhayrsr/LeetCode/tree/master/0146-lru-cache) |
 | [2434-design-a-number-container-system](https://github.com/abhayrsr/LeetCode/tree/master/2434-design-a-number-container-system) |
 ## Ordered Set
 |  |
@@ -240,4 +243,8 @@ You can check the profile here: https://leetcode.com/Abhay_Raj/
 |  |
 | ------- |
 | [3447-clear-digits](https://github.com/abhayrsr/LeetCode/tree/master/3447-clear-digits) |
+## Doubly-Linked List
+|  |
+| ------- |
+| [0146-lru-cache](https://github.com/abhayrsr/LeetCode/tree/master/0146-lru-cache) |
 <!---LeetCode Topics End-->
