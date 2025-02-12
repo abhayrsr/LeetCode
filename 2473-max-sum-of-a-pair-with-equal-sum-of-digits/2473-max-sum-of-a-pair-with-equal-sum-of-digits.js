@@ -7,8 +7,11 @@ var maximumSum = function(nums) {
             sum += temp % 10;
             temp = Math.floor(temp / 10);
         }
-        if (max[sum] !== 0) ans = Math.max(ans, x + max[sum]);
-        max[sum] = Math.max(max[sum], x);
+
+        if(max[sum] !== 0) {
+            ans = Math.max(ans, x + max[sum]);
+        }
+        max[sum] = Math.max(x, max[sum]);
     }
     return ans;
 };
