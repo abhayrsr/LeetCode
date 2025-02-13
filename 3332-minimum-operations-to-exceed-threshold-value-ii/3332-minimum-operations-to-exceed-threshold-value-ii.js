@@ -12,12 +12,15 @@ var minOperations = function(nums, k) {
 
     let ans = 0;
 
-    while(minHeap.size() > 1 && minHeap.front().element < k){
+    if(minHeap.front().element >= k) return 0;
+
+    while(minHeap.size() > 1){
         let num1 = minHeap.dequeue().element;
         let num2 = minHeap.dequeue().element;
         let combined = num1 * 2 + num2;
         minHeap.enqueue(combined);
         ans++;
+        if(minHeap.front().element >= k) break;
     }
     return ans;
 };
